@@ -5,41 +5,40 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.luyunfeng.selectionpanel.adapter.SelectionAdapter;
+import com.luyunfeng.selectionpanellibrary.FlowLayoutManager;
+import com.luyunfeng.selectionpanellibrary.OnSelectionChangedListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnSelectionChangedListener{
-    private List<TestBean> mDatas;
+public class MainActivity extends AppCompatActivity implements OnSelectionChangedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initDatas();
-        RecyclerView mRv = (RecyclerView) findViewById(R.id.rv);
-        mRv.setLayoutManager(new FlowLayoutManager());//自己写的流式布局
-        SelectionAdapter adapter = new SelectionAdapter(mDatas);
+
+        List<Airport> airportList = new ArrayList<Airport>() {
+            {
+                add(new Airport("拉瓜迪亚机场"));
+                add(new Airport("肯尼迪国际机场"));
+                add(new Airport("纽瓦克机场"));
+                add(new Airport("洛杉矶国际机场"));
+                add(new Airport("旧金山国际机场"));
+                add(new Airport("戴高乐国际机场"));
+                add(new Airport("奥利机场"));
+                add(new Airport("希思罗国际机场"));
+                add(new Airport("巴尔的摩华盛顿机场"));
+                add(new Airport("奥黑尔国际机场"));
+            }
+        };
+
+        SelectionAdapter adapter = new SelectionAdapter(airportList);
         adapter.setOnSelectionChangedListener(this);
+
+        RecyclerView mRv = (RecyclerView) findViewById(R.id.rv);
+        mRv.setLayoutManager(new FlowLayoutManager());
         mRv.setAdapter(adapter);
-    }
-
-    private int i = 0;
-
-    public List<TestBean> initDatas() {
-        mDatas = new ArrayList<>();
-        for (int j = 0; j < 10; j++) {
-            mDatas.add(new TestBean((i++) + " 张"));
-            mDatas.add(new TestBean((i++) + " 旭童"));
-            mDatas.add(new TestBean((i++) + " 多种type"));
-            mDatas.add(new TestBean((i++) + "    遍"));
-            mDatas.add(new TestBean((i++) + "   多种type"));
-            mDatas.add(new TestBean((i++) + "  多种type"));
-            mDatas.add(new TestBean((i++) + "  多种type"));
-            mDatas.add(new TestBean((i++) + "  多种type"));
-        }
-        return mDatas;
     }
 
     @Override

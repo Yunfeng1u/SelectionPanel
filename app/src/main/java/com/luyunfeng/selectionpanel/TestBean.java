@@ -1,11 +1,7 @@
 package com.luyunfeng.selectionpanel;
 
-/**
- * 介绍：
- * 作者：zhangxutong
- * 邮箱：zhangxutong@imcoming.com
- * 时间： 2016/9/9.
- */
+import com.luyunfeng.selectionpanellibrary.Selectable;
+
 public class TestBean implements Selectable {
 
     private boolean isSelected;

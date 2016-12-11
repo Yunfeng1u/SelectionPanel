@@ -3,75 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_370ce87b50f41dbefa0e864446217ba8709baa09/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_33a2ccd785c71011fe1b7d966a8b9ae2e62402c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_223a8187d6553a8f567e1890fbcf3794ee41c723/classes.dex" />
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_73bd51d42ebe3602aeaecbefb5760ec70f074d7f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c9e28cf1229d2d97d9a8a80632068cdcf846c4f5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_1c6134fce485076f82b59bf8296b91b2c6c155ed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_e66e26fbd36d8bceff2b194385b38c02631a2b37/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_c00865dbef23d03c20c5be93d2a2e50fde6fa2ed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a96d8a245f25eaaade94ed067643127404275b78">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_81d8b60b85816919fa7fcaebf0fb6a04296c5c8a/classes.dex" />
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_10cb9fda4990d9cb944527ad7ad94814f1081323/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -80,88 +26,142 @@
         optimize="true"
         revision="25.0.1"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_df663d071b35cbfc7ae036b212d98cfb0af687a9/classes.dex" />
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_df663d071b35cbfc7ae036b212d98cfb0af687a9/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="11b6ab020938500f5bb009be50b8fd48af4ca055">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0e72e0545e8a2faec0edca60a1f79a9bd4bfd465/classes.dex" />
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_67471dc548ccdd7eb84d71466a008d4ad3831f84/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_648d57df1d1e8aa8a8ac70913e70fffe06cb4c41/classes.dex" />
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_b4ede800d9e32b3aa138dcfe453f0e73c1ce5f0f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_30a512539b4ff43dd7da02394f938f5a0884b0cf/classes.dex" />
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_50bb40d985c5348627b099f8ad281a68d6b02c0f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_c8036be4cb863a59f4d52fe7427c05d44ba85719/classes.dex" />
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_10bc8cf688c093373a18daf0f55a60374f68fdf1/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_b73be711396025284441f59345f03118b1bae858/classes.dex" />
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_443bc6dded540c5d0cf7010684a0e877b5adc8e0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_f52a959c5d92465c19af6d2d126817013a5c7cf4/classes.dex" />
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_d8c391d6cc4400fad58ac27b3c1f54813efea2b0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_19fc35c7eeae97834990ea67d65703b45543f071/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_767d13a41f845be92e5911b6967f0a65c8ecda3d/classes.dex" />
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_732a4867cb641b3ed0c14399b163e40a5ce99f89/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_207840b2e6ce0e8682b21908daa312b749d943e0/classes.dex" />
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_b905bbbfb35e990cc1ddaaa7f2f8484b3565ca15/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_48d7fac55e5fffde5c3a11752e033f5ed715189e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_07d34e4d31f742ef07347194ece6009509b98dbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6556657d42bff92b31f92ad62813ec41f29fa3ce">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1697c30653d950f1977f34fdd81aa324d4046b52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8515a8496a8dc5bd4b8f4f50753594cf3896169d">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2de441bcb3e1ba3dd298130152eb3ccd44d1f988/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c7f8416fbb1500a3f4c577d9bb59f9ab2fadc660/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/SelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_bf3aa1bf3b1f0765e0737519da81efee7722523e/classes.dex" />
+        <dex dex="/Users/luyunfeng/Documents/AndroidProjects/AndroidSelectionPanel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_1afde223e6e684cac8b1f12926fc46bde952e729/classes.dex" />
     </item>
 
 </items>
