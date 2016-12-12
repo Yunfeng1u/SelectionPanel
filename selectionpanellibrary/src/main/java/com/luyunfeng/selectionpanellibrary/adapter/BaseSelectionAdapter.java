@@ -2,7 +2,6 @@ package com.luyunfeng.selectionpanellibrary.adapter;
 
 import android.widget.CompoundButton;
 
-
 import com.luyunfeng.selectionpanellibrary.OnSelectionChangedListener;
 import com.luyunfeng.selectionpanellibrary.R;
 import com.luyunfeng.selectionpanellibrary.Selectable;
@@ -16,17 +15,18 @@ import java.util.List;
 
 public abstract class BaseSelectionAdapter<t extends Selectable> extends BaseAdapter<t> {
 
-    private OnSelectionChangedListener listener;
-
-    private List<Integer> selectedList = new ArrayList<>();
+    protected OnSelectionChangedListener listener;
 
     public void setOnSelectionChangedListener(OnSelectionChangedListener listener){
         this.listener = listener;
     }
 
+    protected List<Integer> selectedList = new ArrayList<>();
+
     public BaseSelectionAdapter(List<t> list) {
         super(list);
-        constructSelectedList();
+        checkDataLegal();
+        initSelectedList();
     }
 
     @Override
@@ -38,7 +38,7 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends BaseAda
                 if (compoundButton.isPressed()){
                     entity.setSelect(b);
                     if (listener != null){
-                        constructSelectedList();
+                        initSelectedList();
                         listener.onSelectionChanged(selectedList);
                     }
                 }
@@ -46,12 +46,19 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends BaseAda
         });
     }
 
-    private void constructSelectedList(){
+    protected void initSelectedList(){
         selectedList.clear();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).isSelected()){
                 selectedList.add(i);
             }
         }
+    }
+
+    protected abstract void checkDataLegal();
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.item_simple_selection;
     }
 }

@@ -1,8 +1,8 @@
 package com.luyunfeng.selectionpanel;
 
 
-import com.luyunfeng.selectionpanellibrary.adapter.BaseSelectionAdapter;
 import com.luyunfeng.selectionpanellibrary.adapter.BaseViewHolder;
+import com.luyunfeng.selectionpanellibrary.adapter.Selection1Adapter;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import java.util.List;
  * Created by luyunfeng on 2016/12/8.
  */
 
-public class SelectionAdapter extends BaseSelectionAdapter<Airport> {
+public class SelectionAdapter extends Selection1Adapter<Airport> {
 
     public SelectionAdapter(List<Airport> list) {
         super(list);

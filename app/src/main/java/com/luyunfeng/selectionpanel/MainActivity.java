@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.luyunfeng.selectionpanellibrary.FlowLayoutManager;
 import com.luyunfeng.selectionpanellibrary.OnSelectionChangedListener;
+import com.luyunfeng.selectionpanellibrary.SelectionBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,12 +33,13 @@ public class MainActivity extends AppCompatActivity implements OnSelectionChange
             }
         };
 
-        SelectionAdapter adapter = new SelectionAdapter(airportList);
-        adapter.setOnSelectionChangedListener(this);
-
         RecyclerView mRv = (RecyclerView) findViewById(R.id.rv);
-        mRv.setLayoutManager(new FlowLayoutManager());
-        mRv.setAdapter(adapter);
+
+        new SelectionBuilder()
+                .setAdapter(new SelectionAdapter(airportList))
+                .setOnSelectionChangedListener(this)
+                .setRecyclerView(mRv)
+                .build();
     }
 
     @Override
