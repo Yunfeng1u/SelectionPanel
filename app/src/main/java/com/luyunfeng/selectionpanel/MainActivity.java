@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements OnSelectionChange
             }
         };
 
+        //airportList.get(5).setSelect(true);
+
         RecyclerView mRv = (RecyclerView) findViewById(R.id.rv);
 
         new SelectionBuilder()

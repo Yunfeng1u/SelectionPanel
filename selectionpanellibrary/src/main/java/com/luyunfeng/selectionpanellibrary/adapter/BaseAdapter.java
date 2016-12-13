@@ -31,8 +31,6 @@ public abstract class BaseAdapter<t> extends RecyclerView.Adapter<BaseViewHolder
     public void onBindViewHolder(BaseViewHolder holder, int position) {
         if (position < list.size()) {
             convert(holder, list.get(position));
-        } else {
-            convert(holder, null);
         }
     }
 

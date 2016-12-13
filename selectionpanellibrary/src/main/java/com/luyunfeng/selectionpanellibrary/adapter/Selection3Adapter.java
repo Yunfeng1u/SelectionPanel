@@ -15,6 +15,10 @@ public abstract class Selection3Adapter<t extends Selectable> extends BaseSelect
 
     public Selection3Adapter(List<t> list) {
         super(list);
+        if (selectedList.size() == 0){
+            selectedList.add(0);
+            list.get(0).setSelect(true);
+        }
     }
 
     @Override
