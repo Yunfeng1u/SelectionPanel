@@ -13,6 +13,7 @@ import android.widget.TextView;
  */
 
 public class BaseViewHolder extends ViewHolder {
+
     private final SparseArray<View> viewPool = new SparseArray<>();
     private View convertView;
 

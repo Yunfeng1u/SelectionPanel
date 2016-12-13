@@ -37,9 +37,7 @@ public abstract class Selection1Adapter<t extends Selectable> extends BaseSelect
                                 entity.setSelect(true);
                                 selectedList.add(holder.getAdapterPosition());
 
-                                if (listener != null) {
-                                    listener.onSelectionChanged(selectedList);
-                                }
+                                sendChanges();
 
                             }else{
                                 compoundButton.setChecked(true);
