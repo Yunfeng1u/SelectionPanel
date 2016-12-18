@@ -1,6 +1,8 @@
 package com.luyunfeng.selectionpanel;
 
 
+import android.view.View;
+
 import com.luyunfeng.selectionpanellibrary.adapter.BaseViewHolder;
 import com.luyunfeng.selectionpanellibrary.adapter.Selection3Adapter;
 
