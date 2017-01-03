@@ -1,5 +1,6 @@
 package com.luyunfeng.selectionpanellibrary.adapter;
 
+import android.util.Log;
 import android.widget.CompoundButton;
 
 import com.luyunfeng.selectionpanellibrary.R;

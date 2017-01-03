@@ -2,11 +2,10 @@ package com.luyunfeng.selectionpanel;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.luyunfeng.selectionpanellibrary.OnSelectionChangedListener;
-import com.luyunfeng.selectionpanellibrary.SelectionBuilder;
+import com.luyunfeng.selectionpanellibrary.SelectionPanel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,12 +34,10 @@ public class MainActivity extends AppCompatActivity implements OnSelectionChange
 
         //airportList.get(5).setSelect(true);
 
-        RecyclerView mRv = (RecyclerView) findViewById(R.id.rv);
-
-        new SelectionBuilder()
-                .setAdapter(new SelectionAdapter(airportList))
+        SelectionPanel sp = (SelectionPanel) findViewById(R.id.sp);
+        sp.setAdapter(new SelectionAdapter(airportList))
                 .setOnSelectionChangedListener(this)
-                .setRecyclerView(mRv)
+                .setItemMargin(16, 16, 16, 16)
                 .build();
     }
 
