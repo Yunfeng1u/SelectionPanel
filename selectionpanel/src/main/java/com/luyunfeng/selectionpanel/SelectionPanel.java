@@ -28,14 +28,7 @@ public class SelectionPanel extends RelativeLayout {
 
     public SelectionPanel(Context context, AttributeSet attrs) {
         super(context, attrs);
-
-        // TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.SelectionPanel);
-        //Drawable outerBackground = ta.getDrawable(R.styleable.HotelArrangementView_outer_background);
-        //Drawable dateBackground = ta.getDrawable(R.styleable.HotelArrangementView_date_background);
-
         LayoutInflater.from(context).inflate(R.layout.layout_selection_panel, this, true);
-
-        // ta.recycle();
     }
 
     public RecyclerView.Adapter getAdapter() {
@@ -68,9 +61,7 @@ public class SelectionPanel extends RelativeLayout {
     private void setList() {
 
         FlexboxLayoutManager manager = new FlexboxLayoutManager(getContext());
-        //设置主轴排列方式
         manager.setFlexDirection(FlexDirection.ROW);
-        //设置是否换行
         manager.setFlexWrap(FlexWrap.WRAP);
         manager.setAlignItems(AlignItems.FLEX_START);
 

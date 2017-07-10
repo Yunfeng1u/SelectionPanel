@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
+import android.widget.Checkable;
 
 import com.luyunfeng.selectionpanel.OnSelectionChangedListener;
 import com.luyunfeng.selectionpanel.R;
@@ -28,6 +28,8 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends Recycle
 
     protected OnSelectionChangedListener listener;
 
+    private int itemLayoutID = R.layout.item_simple_selection;
+    private int itemID = R.id.cb_item;
 
     public BaseSelectionAdapter(List<t> list) {
         this.list = list;
@@ -35,9 +37,18 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends Recycle
         initSelectedList();
     }
 
+    public void setItemLayoutID(int itemLayoutID, int itemID) {
+        this.itemLayoutID = itemLayoutID;
+        this.itemID = itemID;
+    }
+
+    public void setItemLayoutID(int itemLayoutID) {
+        this.itemLayoutID = itemLayoutID;
+    }
+
     @Override
     public BaseSelectionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(getLayoutId(), parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(itemLayoutID, parent, false);
         return new BaseSelectionViewHolder(view);
     }
 
@@ -54,41 +65,37 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends Recycle
         return list.size();
     }
 
-    protected void initSelectedList(){
+    protected void initSelectedList() {
         selectedList.clear();
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).isChecked()){
+            if (list.get(i).isChecked()) {
                 selectedList.add(i);
             }
         }
     }
 
-    protected void sendChanges(){
-        if (listener != null){
+    protected void sendChanges() {
+        if (listener != null) {
             listener.onSelectionChanged(selectedList);
         }
     }
 
-    protected abstract void validateData();
 
-    public void setOnSelectionChangedListener(OnSelectionChangedListener listener){
+    public void setOnSelectionChangedListener(OnSelectionChangedListener listener) {
         this.listener = listener;
     }
 
+    protected abstract void validateData();
+
     protected abstract void convert(BaseSelectionViewHolder holder, t entity);
 
-    protected int getLayoutId() {
-        return R.layout.item_simple_selection;
-    }
+    public class BaseSelectionViewHolder extends RecyclerView.ViewHolder {
 
-
-    public static class BaseSelectionViewHolder extends RecyclerView.ViewHolder {
-
-        public CheckBox cb_item;
+        public Checkable cb_item;
 
         public BaseSelectionViewHolder(View view) {
             super(view);
-            cb_item = (CheckBox) view.findViewById(R.id.cb_item);
+            cb_item = (Checkable) view.findViewById(itemID);
         }
     }
 }

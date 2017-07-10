@@ -16,6 +16,12 @@ import com.luyunfeng.selectionpanel.adapter.SingleSelectionAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * TODO
+ * attr
+ * align
+ * collapse/expand
+ */
 public class MainActivity extends AppCompatActivity implements OnSelectionChangedListener {
 
     @Override
@@ -45,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnSelectionChange
             @Override
             public void onClick(View v) {
                 BaseSelectionAdapter adapter = new MultiSelectionAllAdapter<>(getList());
+                adapter.setItemLayoutID(R.layout.item_selection);
                 adapter.setOnSelectionChangedListener(MainActivity.this);
                 build(adapter);
             }
