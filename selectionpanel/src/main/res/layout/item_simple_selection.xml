@@ -3,9 +3,6 @@
     android:id="@+id/cb_item"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="8dp"
-    android:background="@drawable/shape_tag_selector"
-    android:button="@null"
     android:gravity="center"
-    android:textColor="@drawable/tag_text_selector"
+    android:minHeight="30dp"
     android:text="全部" />

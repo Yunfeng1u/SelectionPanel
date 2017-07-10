@@ -1,1 +1,1 @@
-include ':app', ':selectionpanellibrary'
+include ':app', ':selectionpanel'
