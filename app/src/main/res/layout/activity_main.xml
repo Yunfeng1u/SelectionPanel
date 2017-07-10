@@ -3,8 +3,50 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <com.luyunfeng.selectionpanel.SelectionPanel
-        android:id="@+id/sp"
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <com.luyunfeng.selectionpanel.SelectionPanel
+            android:id="@+id/sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:alignItems="center"
+            app:alignContent="flex_start"
+            app:justifyContent="flex_start"
+            app:showDivider="beginning|middle|end">
+
+            <Button
+                android:id="@+id/bt_single"
+                android:text="Single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_multiple"
+                android:text="Multiple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_multiple_all"
+                android:text="Multiple with Reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_custom"
+                android:visibility="gone"
+                android:text="Custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+
 </ScrollView>

@@ -9,8 +9,10 @@ import java.util.List;
 /**
  * Created by luyunfeng on 2016/12/8.
  *
- * Allow multiple selections, the first item act like "All" that will be selected
- * when no items are selected
+ * Allow multiple selections,
+ * the first item acts like "Reset",
+ * when the first item is selected, other items' status will be clear
+ * when no items are selected, the first item will be selected
  */
 public class MultiSelectionAllAdapter<t extends Selectable> extends BaseSelectionAdapter<t> {
 

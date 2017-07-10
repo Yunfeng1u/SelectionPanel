@@ -20,7 +20,6 @@ import com.luyunfeng.selectionpanel.adapter.BaseSelectionAdapter;
 
 public class SelectionPanel extends RelativeLayout {
 
-    private @SelectionMode int selectionMode = SelectionMode.SINGLE;
     private BaseSelectionAdapter adapter;
     private OnSelectionChangedListener listener;
     private int[] itemMargin;
@@ -39,14 +38,6 @@ public class SelectionPanel extends RelativeLayout {
         LayoutInflater.from(context).inflate(R.layout.layout_selection_panel, this, true);
 
         // ta.recycle();
-    }
-
-    public int getSelectionMode() {
-        return selectionMode;
-    }
-
-    public void setSelectionMode(int selectionMode) {
-        this.selectionMode = selectionMode;
     }
 
     public BaseSelectionAdapter getAdapter() {
@@ -95,8 +86,12 @@ public class SelectionPanel extends RelativeLayout {
         RecyclerView rv_selection = (RecyclerView) findViewById(R.id.rv_selection);
         rv_selection.setLayoutManager(manager);
         rv_selection.setAdapter(adapter);
-        if (itemMargin != null)
-            rv_selection.addItemDecoration(new ItemMarginDecoration(itemMargin));
+        if (itemMargin != null) {
+            if (rv_selection.getTag() == null){
+                rv_selection.addItemDecoration(new ItemMarginDecoration(itemMargin));
+                rv_selection.setTag("Decoration");
+            }
+        }
     }
 
     public SelectionPanel setOnSelectionChangedListener(OnSelectionChangedListener listener) {

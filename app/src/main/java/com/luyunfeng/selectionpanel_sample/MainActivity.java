@@ -2,12 +2,15 @@ package com.luyunfeng.selectionpanel_sample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
 import com.luyunfeng.selectionpanel.OnSelectionChangedListener;
 import com.luyunfeng.selectionpanel.SelectionPanel;
 import com.luyunfeng.selectionpanel.adapter.BaseSelectionAdapter;
+import com.luyunfeng.selectionpanel.adapter.MultiSelectionAdapter;
 import com.luyunfeng.selectionpanel.adapter.MultiSelectionAllAdapter;
+import com.luyunfeng.selectionpanel.adapter.SingleSelectionAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +22,50 @@ public class MainActivity extends AppCompatActivity implements OnSelectionChange
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        List<Airport> airportList = new ArrayList<Airport>() {
+        findViewById(R.id.bt_single).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BaseSelectionAdapter adapter = new SingleSelectionAdapter<>(getList());
+                build(adapter);
+            }
+        });
+
+        findViewById(R.id.bt_multiple).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BaseSelectionAdapter adapter = new MultiSelectionAdapter<>(getList());
+                build(adapter);
+            }
+        });
+
+        findViewById(R.id.bt_multiple_all).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BaseSelectionAdapter adapter = new MultiSelectionAllAdapter<>(getList());
+                build(adapter);
+            }
+        });
+
+        findViewById(R.id.bt_custom).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BaseSelectionAdapter adapter = new MultiSelectionAllAdapter<Airport>(getList()) {
+                    @Override
+                    protected int getLayoutId() {
+                        return R.layout.item_selection;
+                    }
+                };
+                build(adapter);
+            }
+        });
+
+        findViewById(R.id.bt_single).performClick();
+    }
+
+    private List<Airport> getList() {
+        return new ArrayList<Airport>() {
             {
+                add(new Airport("全部"));
                 add(new Airport("拉瓜迪亚机场"));
                 add(new Airport("肯尼迪国际机场"));
                 add(new Airport("纽瓦克机场"));
@@ -33,13 +78,9 @@ public class MainActivity extends AppCompatActivity implements OnSelectionChange
                 add(new Airport("奥黑尔国际机场"));
             }
         };
+    }
 
-        //airportList.get(5).setSelect(true);
-
-        // BaseSelectionAdapter adapter = new SelectionAdapter(airportList);
-        // BaseSelectionAdapter adapter = new SingleSelectionAdapter<>(airportList);
-        // BaseSelectionAdapter adapter = new MultiSelectionAdapter<>(airportList);
-        BaseSelectionAdapter adapter = new MultiSelectionAllAdapter<>(airportList);
+    private void build(BaseSelectionAdapter adapter) {
         SelectionPanel sp = (SelectionPanel) findViewById(R.id.sp);
         sp.setAdapter(adapter)
                 .setOnSelectionChangedListener(this)
@@ -49,6 +90,6 @@ public class MainActivity extends AppCompatActivity implements OnSelectionChange
 
     @Override
     public void onSelectionChanged(List<Integer> list) {
-        Log.d("test", list.toString());
+        Toast.makeText(this, list.toString(), Toast.LENGTH_SHORT).show();
     }
 }

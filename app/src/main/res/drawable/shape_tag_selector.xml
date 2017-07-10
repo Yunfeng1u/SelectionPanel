@@ -4,16 +4,16 @@
         <shape>
             <gradient android:startColor="@color/colorAccent"
                 android:endColor="@color/colorAccent"/>
-            <stroke android:color="@color/colorAccent" android:width="0.5dp"/>
-            <corners android:radius="4dp"/>
+            <stroke android:color="@color/colorAccent" android:width="0.6dp"/>
+            <corners android:radius="6dp"/>
         </shape>
     </item>
     <item>
         <shape>
             <gradient android:startColor="@android:color/white"
                 android:endColor="@android:color/white"/>
-            <stroke android:color="#b9b9b9" android:width="0.5dp"/>
-            <corners android:radius="4dp"/>
+            <stroke android:color="#b9b9b9" android:width="0.6dp"/>
+            <corners android:radius="6dp"/>
         </shape>
     </item>
 </selector>
