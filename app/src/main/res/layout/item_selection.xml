@@ -8,4 +8,4 @@
     android:button="@null"
     android:gravity="center"
     android:textColor="@drawable/tag_text_selector"
-    android:text="全部" />
+    android:text="不限" />

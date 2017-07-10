@@ -4,12 +4,11 @@ import com.luyunfeng.selectionpanel.Selectable;
 
 /**
  * Created by luyunfeng on 16/3/17.
+ * Test entity
  */
 public class Airport implements Selectable {
 
     private String text;
-
-    private String param;
 
     private boolean enable;
 
@@ -17,7 +16,6 @@ public class Airport implements Selectable {
 
     public Airport(String text){
         setText(text);
-        setParam(text);
     }
 
     @Override
@@ -36,16 +34,6 @@ public class Airport implements Selectable {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    @Override
-    public String getParam() {
-        return param;
-    }
-
-    @Override
-    public void setParam(String param) {
-        this.param = param;
     }
 
     @Override

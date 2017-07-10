@@ -12,7 +12,6 @@ import com.google.android.flexbox.AlignItems;
 import com.google.android.flexbox.FlexDirection;
 import com.google.android.flexbox.FlexWrap;
 import com.google.android.flexbox.FlexboxLayoutManager;
-import com.luyunfeng.selectionpanel.adapter.BaseSelectionAdapter;
 
 /**
  * Created by luyunfeng on 2016/12/18.
@@ -20,8 +19,7 @@ import com.luyunfeng.selectionpanel.adapter.BaseSelectionAdapter;
 
 public class SelectionPanel extends RelativeLayout {
 
-    private BaseSelectionAdapter adapter;
-    private OnSelectionChangedListener listener;
+    private RecyclerView.Adapter adapter;
     private int[] itemMargin;
 
     public SelectionPanel(Context context) {
@@ -40,21 +38,14 @@ public class SelectionPanel extends RelativeLayout {
         // ta.recycle();
     }
 
-    public BaseSelectionAdapter getAdapter() {
+    public RecyclerView.Adapter getAdapter() {
         return adapter;
     }
 
-    public SelectionPanel setAdapter(BaseSelectionAdapter adapter) {
+    public void setAdapter(RecyclerView.Adapter adapter) {
         this.adapter = adapter;
-        return this;
-    }
-
-    public void build(){
-        if (adapter != null) {
-            adapter.setOnSelectionChangedListener(listener);
-            setList();
-            setEvent();
-        }
+        setList();
+        setEvent();
     }
 
     private void setEvent() {
@@ -94,13 +85,7 @@ public class SelectionPanel extends RelativeLayout {
         }
     }
 
-    public SelectionPanel setOnSelectionChangedListener(OnSelectionChangedListener listener) {
-        this.listener = listener;
-        return this;
-    }
-
-    public SelectionPanel setItemMargin(int itemMarginLeft, int itemMarginTop, int itemMarginRight, int itemMarginBottom) {
+    public void setItemMargin(int itemMarginLeft, int itemMarginTop, int itemMarginRight, int itemMarginBottom) {
         this.itemMargin = new int[]{itemMarginLeft, itemMarginTop, itemMarginRight, itemMarginBottom};
-        return this;
     }
 }

@@ -41,12 +41,18 @@
                 android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/bt_custom"
-                android:visibility="gone"
                 android:text="Custom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </com.google.android.flexbox.FlexboxLayout>
 
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </ScrollView>

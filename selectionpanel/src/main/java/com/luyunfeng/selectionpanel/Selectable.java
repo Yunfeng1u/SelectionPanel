@@ -11,9 +11,6 @@ public interface Selectable {
     String getText();
     void setText(String text);
 
-    String getParam();
-    void setParam(String text);
-
     boolean isEnable();
     void setEnable(boolean isEnable);
 }

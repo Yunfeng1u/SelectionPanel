@@ -5,4 +5,4 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:minHeight="30dp"
-    android:text="全部" />
+    android:text="不限" />
