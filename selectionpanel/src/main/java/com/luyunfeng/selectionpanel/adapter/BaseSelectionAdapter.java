@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Checkable;
+import android.widget.CompoundButton;
 
 import com.luyunfeng.selectionpanel.OnSelectionChangedListener;
 import com.luyunfeng.selectionpanel.R;
@@ -17,7 +17,8 @@ import java.util.List;
  * Created by luyunfeng on 2016/12/8.
  * Handle base selection logic
  */
-public abstract class BaseSelectionAdapter<t extends Selectable> extends RecyclerView.Adapter<BaseSelectionAdapter.BaseSelectionViewHolder> {
+public abstract class BaseSelectionAdapter<t extends Selectable>
+        extends RecyclerView.Adapter<BaseSelectionAdapter.BaseSelectionViewHolder> {
 
     protected List<t> list;
 
@@ -52,7 +53,6 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends Recycle
         return new BaseSelectionViewHolder(view);
     }
 
-
     @Override
     public void onBindViewHolder(BaseSelectionViewHolder holder, int position) {
         if (position < list.size()) {
@@ -80,7 +80,6 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends Recycle
         }
     }
 
-
     public void setOnSelectionChangedListener(OnSelectionChangedListener listener) {
         this.listener = listener;
     }
@@ -91,11 +90,11 @@ public abstract class BaseSelectionAdapter<t extends Selectable> extends Recycle
 
     public class BaseSelectionViewHolder extends RecyclerView.ViewHolder {
 
-        public Checkable cb_item;
+        public CompoundButton cb_item;
 
         public BaseSelectionViewHolder(View view) {
             super(view);
-            cb_item = (Checkable) view.findViewById(itemID);
+            cb_item = (CompoundButton) view.findViewById(itemID);
         }
     }
 }

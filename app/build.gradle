@@ -24,6 +24,7 @@ dependencies {
     compile project(':selectionpanel')
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.google.android:flexbox:0.3.0'
 
 
 }
